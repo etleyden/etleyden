@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @etleyden
-- 👀 I’m interested in software engineering (would like to learn more about AI)
-- 🌱 I’m currently learning *Python, Machine Learning*
+- 👀 I’m interested in software engineering (would like to learn more about Machine Learning)
 - 💞️ I’m looking to collaborate on any open source project that is approachable for beginners in the field. 
 - 📫 How to reach me:
 - personal email: etleyden@gmail.com
