@@ -1,0 +1,19 @@
+{
+  "name": "ethan-leyden-website",
+  "version": "1.0.0",
+  "description": "Personal website for Ethan Leyden",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/etleyden/etleyden.git"
+  },
+  "author": "Ethan Leyden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etleyden/etleyden/issues"
+  },
+  "homepage": "https://github.com/etleyden/etleyden#readme"
+}
