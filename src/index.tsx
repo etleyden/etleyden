@@ -24,9 +24,12 @@ const App: React.FC = () => (
     </div>
 
     <main className="vw-100" id="home_main">
-      <div className="container justify-content-center">
+      <div id="resume" className="container justify-content-center">
+        <div className="row">
+          <h1>Profile</h1>
+        </div>
         <div className="row py-3">
-          <h1>Hello, World.</h1>
+          <h2>Work experience</h2>
         </div>
       </div>
     </main>
