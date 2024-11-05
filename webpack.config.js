@@ -1,10 +1,11 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
+    filename: 'static/js/[name].[contenthash:8].js',
     publicPath: '/',
   },
   module: {
@@ -28,6 +29,12 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
+    plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html',  // Specify the template for index.html
+      inject: 'head',  // Inject JS bundle into the body (can be "head" or "body")
+    }),
+  ],
   devServer: {
     static: './',
     compress: true,
