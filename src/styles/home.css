@@ -1,0 +1,23 @@
+#landing {
+  text-shadow: 0.1em .5rem 1rem rgba(0, 0, 0, .5);
+}
+
+body {
+  color: white;
+  /*background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1)) !important;*/
+  background-image: url("../../assets/landscape_ethan.jpg");
+  background-position: center;
+  height: 100vh;
+}
+
+
+#name-banner {
+  font-size: 10vw;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+#home_main {
+  box-shadow: 0 -2em 3.5em black;
+  background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1));
+}
