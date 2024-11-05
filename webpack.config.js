@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'static/js/[name].[contenthash:8].js',
+    filename: 'bundle.js',
     publicPath: '/',
   },
   module: {
@@ -23,13 +23,13 @@ module.exports = {
       }, {
         test: /\.md$/,
         use:  'raw-loader',
-      }
+      }, 
     ],
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
-    plugins: [
+  plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',  // Specify the template for index.html
       inject: 'head',  // Inject JS bundle into the body (can be "head" or "body")
