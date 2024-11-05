@@ -5,29 +5,32 @@ import './styles/index.css'
 
     //<!--<div className="d-flex w-100 h-100 p-3 flex-column"></div>-->
 const App: React.FC = () => (
-  <div className="cover-container container-fluid p-3 mx-auto overflow-hidden">
-    <header className='row'>
-      <div>
-        <h3 className="float-md-start mb-0">Ethan Leyden</h3>
-        <nav className="nav nav-masthead justify-content-center float-md-end">
-          <a className="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-          <a className="nav-link fw-bold py-1 px-0" href="#">Features</a>
-          <a className="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-        </nav>
+  <div>
+    <div id="landing" className="d-flex flex-column container vh-100">
+      <header className='row sticky-top' id='navbar'>
+        <div id="navbar_div" className="container d-flex flex-column py-4">
+          <nav className="nav nav-masthead justify-content-evenly float-md-end">
+            <a className="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+            <a className="nav-link fw-bold py-1 px-0" href="#">Features</a>
+            <a className="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+      <div className="row flex-grow-1">
+        <div id="main_hero" className="m-auto">
+          <p id="name-banner" className="">Ethan Leyden</p>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <main className="row" id="fp-hero">
-      <div className="col">
-      <h1>Welcome to the site</h1>
-      <p className="lead">It's definitely still under construction. Do you know how to vertically center content with Bootstrap? I sure don't</p>
-      <p className="lead">
-        <a href="#" className="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-      </p>
+    <main className="vw-100" id="home_main">
+      <div className="container justify-content-center">
+        <div className="row py-3">
+          <h1>Hello, World.</h1>
+        </div>
       </div>
     </main>
   </div>
-
 )
 
 ReactDOM.render(<App />, document.getElementById('root'));
