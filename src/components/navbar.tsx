@@ -12,7 +12,7 @@ const Navbar: React.FC = () => (
           <nav className="nav nav-masthead justify-content-evenly float-md-end">
             <NavLink id="homelink" className="nav-link fw-bold py-1 px-0" aria-current="page" to="/">Home</NavLink>
             <NavLink id="resumelink" className="nav-link fw-bold py-1 px-0" to="/resume">Resume</NavLink>
-            <NavLink id="contactlink" className="nav-link fw-bold py-1 px-0" to="/contact">Contact</NavLink>
+            <NavLink id="contactlink" className="nav-link fw-bold py-1 px-0" to="mailto:etleyden@gmail.com">Contact</NavLink>
           </nav>
         </div>
       </header>

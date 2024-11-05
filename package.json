@@ -21,11 +21,18 @@
     "@types/bootstrap": "^5.2.10",
     "@types/react-bootstrap": "^0.32.37",
     "bootstrap": "^5.3.3",
+    "docco": "^0.9.1",
+    "raw-loader": "^4.0.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.27.0"
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.27.0",
+    "react-syntax-highlighter": "^15.6.1",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -34,6 +41,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/react-helmet": "^6.1.11",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "sass": "^1.80.6",
