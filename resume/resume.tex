@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ethan Leyden} \\ \vspace{1pt}
+    \small 704-500-5351 $|$ \href{mailto:x@x.com}{\underline{etleyden@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ethanleyden}{\underline{linkedin.com/in/ethanleyden}} $|$
+    \href{https://github.com/etleyden}{\underline{github.com/etleyden}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Virginia Commonwealth University (VCU)}{Richmond, VA}
+      {Bachelor of Science in Computer Science, Concentration in Data Science, GPA: 4.0}{Expected May 2025}
+    \resumeSubheading
+      {Mitchell Community College}{Statesville, NC}
+      {Associate's in Science}{August 2014 -- May 2019}
+  \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages}{: Python, Java, C/C++, MySQL, JavaScript/TypeScript, HTML/CSS, Common Lisp, Swift, PHP, Lua, LaTeX} \\
+        \textbf{Frameworks}{: pandas, numpy, React, Node.js, Bootstrap, jQuery, p5.js/Processing} \\
+        \textbf{Tools}{: pip, npm, git, Linux (Arch, Mint, Ubuntu), SLURM, Figma, Wordpress, JSON, XML, Vi/Vim/Neovim}
+    }}  
+    \end{itemize}
+    
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2024 -- Present}
+      {VCU NanoNLP Lab}{Richmond, VA}
+      \resumeItemListStart
+        \resumeItem{Weekly presentations on some of the latest research in natural language processing.}
+        \resumeItem{\emph{GeNER:} Contributed to research about using large language models to generate synthetic training data for Named Entity Recognition (NER) systems.}
+        \resumeItem{Hands-on experience using high performance computing systems to build and train machine-learning models. }
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Tech Admin}{December 2023 -- November 2024}
+      {Digital Neighbor}{Remote/Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Leveraging the latest SEO best practices to boost engagement on client websites}
+        \resumeItem{Implementing, updating, and monitoring client websites to be equipped with the necessary tools to track marketing leads.}
+        \resumeItem{Troubleshooting issues on short-notice to ensure a seamless user-experience.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Leader}{September 2020 -- Present}
+      {Target T1931}{Richmond, VA}
+      \resumeItemListStart
+        \resumeItem{Demonstrate competent leadership for a team of 3-15 people, resulting in workload completion ahead of schedule.}
+        \resumeItem{Proven track record of prioritizing the business needs, and as a result, gained a lot of business acumen.}
+        \resumeItem{Oversaw various departments throughout the store, learning how to manage competing priorities in the best interest of the company.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{GeNER} $|$ \emph{Python, PyTorch Lightning, git, Jupyter Notebook, SLURM}}{}
+          \resumeItemListStart
+            \resumeItem{Research project on the generation of synthetic NER training data using LLMs.}
+            \resumeItem{Expanded support to utilize the Llama3 LLM for data generation}
+            \resumeItem{Documented project setup to improve accessibility for future contributors}
+            \resumeItem{Performed preprocessing tasks on the CONLL2003 dataset, and helped adapt the system for other available NER datasets.}
+            \resumeItem{Filtering synthetic samples by the cosine similarity to real data, and experimented with filtered results.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{RVA Community Fridges}, Senior Capstone $|$ \emph{LoRa, Meshtastic, Arduino/C++, git}}{}
+        \resumeItemListStart
+            \resumeItem{Levered LoRa microcontrollers to wirelessly transmit data from 15 community fridges in the Greater Richmond Area}
+            \resumeItem{As Project Manager, structured an Agile workflow for a team of four people, conducting weekly sprints with mentorship from a faculty advisor. }
+        \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{React Color Picker} $|$ \emph{React, npm, HTML/CSS, Javascript/Typescript}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and built a color picker tool using the React framework, demonstrating competency in the technologies used for front-end web development, as well as competency in UI/UX design. }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+
+%-------------------------------------------
+\end{document}
