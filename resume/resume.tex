@@ -38,7 +38,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
+ 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -125,9 +125,6 @@
     \resumeSubheading
       {Virginia Commonwealth University (VCU)}{Richmond, VA}
       {Bachelor of Science in Computer Science, Concentration in Data Science, GPA: 4.0}{Expected May 2025}
-    \resumeSubheading
-      {Mitchell Community College}{Statesville, NC}
-      {Associate's in Science}{August 2014 -- May 2019}
   \resumeSubHeadingListEnd
 
 
@@ -149,9 +146,12 @@
       {Undergraduate Research Assistant}{May 2024 -- Present}
       {VCU NanoNLP Lab}{Richmond, VA}
       \resumeItemListStart
-        \resumeItem{Weekly presentations on some of the latest research in natural language processing.}
-        \resumeItem{\emph{GeNER:} Contributed to research about using large language models to generate synthetic training data for Named Entity Recognition (NER) systems.}
-        \resumeItem{Hands-on experience using high performance computing systems to build and train machine-learning models. }
+        \resumeItem{Contributed to research about using large language models to generate synthetic training data for Named Entity Recognition (NER) systems.}
+        \resumeItem{Expanded support of the project to utilize the Llama3 LLM for data generation.}
+        \resumeItem{Wrote documentation, improving accessibility for future contributors.}
+        \resumeItem{Performed preprocessing tasks on the CONLL2003 dataset, and adapted the system for other NER datasets.}
+        \resumeItem{Used high performance computing systems to build and train ML models, scheduling jobs with SLURM.}
+        \resumeItem{Delivered weekly presentations on some of the latest research in natural language processing.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -165,14 +165,13 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Tech Admin}{December 2023 -- November 2024}
+      {IT Analyst}{December 2023 -- November 2024}
       {Digital Neighbor}{Remote/Tampa, FL}
       \resumeItemListStart
-        \resumeItem{Leveraging the latest SEO best practices to boost engagement on client websites}
+        \resumeItem{Leveraging the latest SEO best practices to boost engagement on client websites.}
         \resumeItem{Implementing, updating, and monitoring client websites to be equipped with the necessary tools to track marketing leads.}
         \resumeItem{Troubleshooting issues on short-notice to ensure a seamless user-experience.}
     \resumeItemListEnd
-
     \resumeSubheading
       {Team Leader}{September 2020 -- Present}
       {Target T1931}{Richmond, VA}
@@ -189,19 +188,18 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-      {\textbf{GeNER} $|$ \emph{Python, PyTorch Lightning, git, Jupyter Notebook, SLURM}}{}
-          \resumeItemListStart
-            \resumeItem{Research project on the generation of synthetic NER training data using LLMs.}
-            \resumeItem{Expanded support to utilize the Llama3 LLM for data generation}
-            \resumeItem{Documented project setup to improve accessibility for future contributors}
-            \resumeItem{Performed preprocessing tasks on the CONLL2003 dataset, and helped adapt the system for other available NER datasets.}
-            \resumeItem{Filtering synthetic samples by the cosine similarity to real data, and experimented with filtered results.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-      {\textbf{RVA Community Fridges}, Senior Capstone $|$ \emph{LoRa, Meshtastic, Arduino/C++, git}}{}
+      {\textbf{RVA Community Fridges Telemetry} $|$ \emph{LoRa, Meshtastic, Arduino/C++, git}}{}
         \resumeItemListStart
-            \resumeItem{Levered LoRa microcontrollers to wirelessly transmit data from 15 community fridges in the Greater Richmond Area}
-            \resumeItem{As Project Manager, structured an Agile workflow for a team of four people, conducting weekly sprints with mentorship from a faculty advisor. }
+            \resumeItem{Designed a compact IoT solution with Raspberry Pi's to monitor refrigerator temperature and door usage.}
+            \resumeItem{Leveraged USB cellular modems to transmit data from 15 community fridges in the Greater Richmond Area.}
+            \resumeItem{Structured an Agile workflow as the Project Manager of a team of four people, conducting weekly sprints with mentorship from a faculty advisor. }
+        \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{NFL Prediction Model} $|$ \emph{Python, PostgreSQL, Scikit-learn, PyTorch, Pandas, git}}{}
+        \resumeItemListStart
+          \resumeItem{Independently designed a data pipeline that scrapes raw data from the internet, organizes it into a database, and subsequently compiles it into a CSV format for model training.}
+          \resumeItem{Used scikit-learn and PyTorch to train models predicting the winner of NFL games with an accuracy as high as 
+          58\%, outperforming amateur sports bettors.}
         \resumeItemListEnd
       \resumeProjectHeading
       {\textbf{React Color Picker} $|$ \emph{React, npm, HTML/CSS, Javascript/Typescript}}{}
